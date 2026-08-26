@@ -1,0 +1,326 @@
+/*
+ * GENERATED FILE - DO NOT EDIT.
+ * Source: REFERENCE-MEASURED.json   Regenerate: npm run theme
+ *
+ * 90 measured / 26 estimated.
+ * Estimated values are placeholders awaiting the Phase 2 measurement pass.
+ * Punch list: docs/ESTIMATES.md
+ */
+
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-sans: Circular, 'Airbnb Cereal VF', var(--font-figtree), -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+
+  /* color */
+  --color-ink: #222222;
+  --color-body: #3F3F3F; /* estimated */
+  --color-muted: #717171;
+  --color-canvas: #FFFFFF; /* estimated */
+  --color-surface: #F7F7F7; /* estimated */
+  --color-border: #DDDDDD; /* estimated */
+  --color-border-soft: #EBEBEB; /* estimated */
+  --color-primary: #FF385C;
+  --color-primary-active: #E00B41; /* estimated */
+  --color-success: #007A04; /* estimated */
+  --color-error: #C13515; /* estimated */
+  --color-lightbox-backdrop: #FFFFFF;
+  --color-overlay-scrim: rgba(0,0,0,0.60); /* estimated */
+  --color-map-water: #ADD1E1;
+  --color-map-land: #E5EBDF;
+  --color-header-control: #F2F2F2;
+  --color-primary-gradient-from: #E31C5F;
+  --color-primary-gradient-to: #D70466;
+  --color-map-park: #CFE3C8;
+  --color-map-grid: #DFE5DA;
+  --color-avatar-pink: #FDE7EF;
+  --color-avatar-pink-ink: #D4356E;
+  --color-avatar-blue: #E7F0FD;
+  --color-avatar-blue-ink: #3A6ECC;
+
+  /* type scale - size + weight + line-height + letter-spacing travel together */
+  --text-display-lg: 26px;
+  --text-display-lg--line-height: 30px;
+  --text-display-lg--font-weight: 500;
+  --text-display-lg--letter-spacing: normal;
+  --text-display-md: 22px;
+  --text-display-md--line-height: 26px;
+  --text-display-md--font-weight: 500;
+  --text-display-md--letter-spacing: normal;
+  --text-display-sm: 20px;
+  --text-display-sm--line-height: 28.6px;
+  --text-display-sm--font-weight: 700;
+  --text-display-sm--letter-spacing: normal;
+  --text-title-md: 16px;
+  --text-title-md--line-height: 22.88px;
+  --text-title-md--font-weight: 500;
+  --text-title-md--letter-spacing: normal;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 22.88px;
+  --text-body-md--font-weight: 400;
+  --text-body-md--letter-spacing: normal;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+  --text-body-sm--letter-spacing: normal;
+  --text-nav-label: 14px;
+  --text-nav-label--line-height: 20px;
+  --text-nav-label--font-weight: 500;
+  --text-nav-label--letter-spacing: normal;
+  --text-price-sm: 15px;
+  --text-price-sm--line-height: 18px;
+  --text-price-sm--font-weight: 500;
+  --text-price-sm--letter-spacing: normal;
+  --text-note: 13px;
+  --text-note--line-height: 18.59px;
+  --text-note--font-weight: 400;
+  --text-note--letter-spacing: normal;
+  --text-micro: 12px;
+  --text-micro--line-height: 17.16px;
+  --text-micro--font-weight: 400;
+  --text-micro--letter-spacing: normal;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-caption--font-weight: 500;
+  --text-caption--letter-spacing: normal;
+  --text-badge: 10px;
+  --text-badge--line-height: 14.3px;
+  --text-badge--font-weight: 700;
+  --text-badge--letter-spacing: 0.4px;
+  --text-card-body: 14px;
+  --text-card-body--line-height: 18.2px;
+  --text-card-body--font-weight: 400;
+  --text-card-body--letter-spacing: normal;
+  --text-logo: 26px;
+  --text-logo--line-height: 1.2;
+  --text-logo--font-weight: 700;
+  --text-logo--letter-spacing: normal;
+  --text-search-icon: 34px; /* estimated */
+  --text-search-icon--line-height: 1;
+  --text-search-icon--font-weight: 400;
+  --text-search-icon--letter-spacing: normal;
+  --text-rating: 100px;
+  --text-rating--line-height: 143px;
+  --text-rating--font-weight: 500;
+  --text-rating--letter-spacing: -3px;
+  --text-label-sm: 13px;
+  --text-label-sm--line-height: 18px;
+  --text-label-sm--font-weight: 500;
+  --text-label-sm--letter-spacing: normal;
+  --text-heading-sm: 18px;
+  --text-heading-sm--line-height: 26px;
+  --text-heading-sm--font-weight: 500;
+  --text-heading-sm--letter-spacing: normal;
+  --text-stat-value: 20px;
+  --text-stat-value--line-height: 29px;
+  --text-stat-value--font-weight: 500;
+  --text-stat-value--letter-spacing: normal;
+  --text-body-lg: 15px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+  --text-body-lg--letter-spacing: normal;
+
+  /* radius */
+  --radius-sm: 8px; /* estimated */
+  --radius-card: 14px; /* estimated */
+  --radius-image: 12px; /* estimated */
+  --radius-hero: 18px; /* estimated */
+  --radius-pill: 999px; /* estimated */
+
+  /* shadow - the design system has exactly one */
+  --shadow-system: rgba(0,0,0,0.02) 0 0 0 1px, rgba(0,0,0,0.04) 0 2px 6px 0, rgba(0,0,0,0.10) 0 4px 8px 0; /* estimated */
+  --shadow-search: rgba(0,0,0,0.08) 0 1px 4px 0;
+  --shadow-search-hover: rgba(0,0,0,0.18) 0 2px 4px 0; /* estimated */
+
+  /* motion */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1); /* estimated */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1); /* estimated */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-modal: 250ms;
+  --motion-overlay-enter-scale: 0.99; /* estimated */
+  --motion-header-lift-range: 4rem; /* estimated */
+
+  /* z-index */
+  --z-lightbox: 60; /* estimated */
+
+  /* layout - measured structural dimensions, exposed as spacing tokens so no
+     component ever needs an arbitrary value like w-[652px] */
+  --spacing-content-width: 1120px;
+  --spacing-content-max-width: 1120px;
+  --spacing-content-side-gutter: 24px;
+  --spacing-header-height: 89px;
+  --spacing-search-pill-height: 48px;
+  --spacing-search-button-size: 32px;
+  --spacing-header-icon-button-size: 40px;
+  --spacing-logo-height: 32px;
+  --spacing-hero-height: 494px;
+  --spacing-hero-to-body-gap: 48px;
+  --spacing-left-column-width: 652px;
+  --spacing-column-gutter: 96px;
+  --spacing-reservation-card-width: 372px;
+  --spacing-hero-gap: 8px;
+  --spacing-sticky-top-offset: 100px;
+  --spacing-section-gap: 48px; /* estimated */
+  --spacing-map-height: 480px;
+  --spacing-reserve-button-height: 48px;
+  --spacing-card-padding: 22px;
+  --spacing-map-grid-cell: 90px;
+  --spacing-header-side-gutter: 80px;
+  --spacing-secondary-nav-height: 67px;
+  --spacing-host-card-width: 340px;
+  --spacing-host-avatar-size: 88px;
+  --spacing-host-column-gap: 48px;
+  --spacing-promo-card-gap: 24px;
+  --spacing-report-gap: 26px;
+  --spacing-promo-card-height: 70px;
+  --spacing-amenities-dialog-width: 780px;
+  --spacing-tour-content-width: 976px;
+  --spacing-tour-column-gap: 60px;
+  --spacing-tour-chip-width: 112px;
+  --spacing-tour-chip-image-height: 105px;
+  --spacing-tour-chip-gap: 12px;
+  --spacing-tour-icon-button-size: 40px;
+  --spacing-tour-photo-gap: 12px;
+  --spacing-search-pill-padding: 8px;
+  --spacing-search-segment-padding: 16px;
+  --spacing-search-lead-icon-size: 48px;
+  --spacing-search-divider-height: 24px;
+  --spacing-laurel-width: 72px;
+  --spacing-laurel-height: 110px;
+  --spacing-discount-badge-size: 32px;
+  --spacing-nearby-card-gap: 20px;
+  --spacing-nearby-card-width: 208px;
+  --spacing-hero-tile-large-w: 560px;
+  --spacing-hero-tile-large-h: 494px;
+  --spacing-hero-tile-small-w: 272px;
+  --spacing-hero-tile-small-h: 243px;
+}
+
+/* Duration utilities. Tailwind v4 has no --duration-* theme namespace, so bare
+   `duration-200` would be a hardcoded value in a component - which token-guardian
+   rejects. These give every duration a name instead. */
+@utility duration-fast {
+  transition-duration: var(--duration-fast);
+}
+@utility duration-base {
+  transition-duration: var(--duration-base);
+}
+@utility duration-modal {
+  transition-duration: var(--duration-modal);
+}
+
+/* Centred body container. Measured over CDP: a fixed 1120px cap, not fluid. */
+@utility container-page {
+  width: min(
+    var(--spacing-content-max-width),
+    100% - 2 * var(--spacing-content-side-gutter)
+  );
+  margin-inline: auto;
+}
+
+/* The header is full-bleed with a fixed side gutter - NOT a centred max-width
+   container. Measured: logo at x=80, last icon button ending at x=1806 in an
+   1886px client, i.e. 80px either side of the full width. */
+@utility container-header {
+  width: 100%;
+  padding-inline: var(--spacing-header-side-gutter);
+}
+
+/* Two-column body split. 652fr:372fr reduces to 163:93;
+   the gap is 96/1120 of the container, so all three scale together. */
+@utility layout-two-column {
+  display: grid;
+  grid-template-columns: 163fr 93fr;
+  gap: 8.57143%;
+}
+
+@utility hero-frame {
+  container-type: inline-size;
+}
+@utility hero-mosaic {
+  display: grid;
+  grid-template-columns: 35fr 17fr 17fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.71429cqw;
+  aspect-ratio: 1120 / 494;
+  border-radius: var(--radius-image);
+  overflow: hidden;
+}
+@utility hero-tile-large {
+  grid-row: span 2;
+}
+
+@utility map-panel {
+  container-type: inline-size;
+  aspect-ratio: 1120 / 480;
+}
+@utility map-grid {
+  background-image:
+    linear-gradient(to right, var(--color-map-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-map-grid) 1px, transparent 1px);
+  background-size: 8.03571cqw 8.03571cqw;
+}
+
+/* Stacking utilities. Named layer-*, not z-*: `z` collides with Tailwind v4 own
+   functional utility namespace, and the custom utility is then silently dropped -
+   verified by grepping the compiled CSS for a class that never appeared. */
+@utility layer-lightbox {
+  z-index: var(--z-lightbox);
+}
+
+/* ---------------------------------------------------------------------------
+   Overlay enter/exit.
+
+   CSS, not Framer Motion. Radix drives these through data-state and waits for the
+   animation to finish before unmounting, so a dependency would buy nothing here but
+   client-bundle weight for two transitions. Durations and easing come from the same
+   tokens as everything else.
+   --------------------------------------------------------------------------- */
+@keyframes overlay-in  { from { opacity: 0 } to { opacity: 1 } }
+@keyframes overlay-out { from { opacity: 1 } to { opacity: 0 } }
+@keyframes content-in  { from { opacity: 0; transform: scale(var(--motion-overlay-enter-scale)) } to { opacity: 1; transform: none } }
+@keyframes content-out { from { opacity: 1; transform: none } to { opacity: 0; transform: scale(var(--motion-overlay-enter-scale)) } }
+
+[data-slot="dialog-overlay"][data-state="open"],
+[role="dialog"][data-state="open"] {
+  animation: overlay-in var(--duration-modal) var(--ease-out);
+}
+[data-slot="dialog-overlay"][data-state="closed"],
+[role="dialog"][data-state="closed"] {
+  animation: overlay-out var(--duration-fast) var(--ease-standard);
+}
+[role="dialog"][data-state="open"]  { animation-name: overlay-in, content-in; }
+[role="dialog"][data-state="closed"] { animation-name: overlay-out, content-out; }
+
+/* ---------------------------------------------------------------------------
+   Sticky header shadow.
+
+   A scroll-driven animation rather than a scroll listener, so the header stays a
+   Server Component and ships no JS for this. Wrapped in @supports: browsers without
+   scroll-timeline simply keep a flat header, which is a fine resting state.
+   --------------------------------------------------------------------------- */
+@supports (animation-timeline: scroll()) {
+  @keyframes header-lift {
+    from { box-shadow: none; }
+    to   { box-shadow: var(--shadow-system); }
+  }
+  header[data-sticky-header] {
+    animation: header-lift linear both;
+    animation-timeline: scroll();
+    animation-range: 0 var(--motion-header-lift-range);
+  }
+}
+
+/* Motion is opt-out globally, per the accessibility requirement. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

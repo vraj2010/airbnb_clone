@@ -1,0 +1,58 @@
+{
+  "name": "airbnb-clone",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run theme && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "theme": "node scripts/generate-theme.mjs",
+    "photos": "node scripts/generate-placeholder-photos.mjs",
+    "test": "playwright test",
+    "geometry": "node scripts/verify-geometry.mjs",
+    "shot": "node scripts/shot.mjs",
+    "diagram": "mmdc -i docs/architecture.mmd -o docs/architecture.png -w 2400 -H 1800 --backgroundColor white",
+    "package": "node scripts/package-submission.mjs",
+    "fetch-photos": "node scripts/fetch-photos.mjs",
+    "cdp": "node scripts/measure/cdp-launch.mjs",
+    "measure": "node scripts/measure/03-computed-truth.mjs",
+    "compare": "node scripts/measure/05-full-compare.mjs",
+    "tour": "node scripts/measure/06-photo-tour.mjs",
+    "tour:grid": "node scripts/measure/07-tour-grid.mjs",
+    "images:manifest": "node scripts/measure/08-image-manifest.mjs",
+    "images:fetch": "node scripts/measure/09-fetch-images.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaitanya-Virani/airbnb_clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaitanya-Virani/airbnb_clone/issues"
+  },
+  "homepage": "https://github.com/Chaitanya-Virani/airbnb_clone#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@mermaid-js/mermaid-cli": "^11.16.0",
+    "@playwright/test": "^1.62.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.23",
+    "lucide-react": "^1.33.0",
+    "next": "^16.3.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^4.4.3"
+  },
+  "private": true
+}

@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# playwright
+# .pw-profile holds the Vercel checkpoint cookie for the reference measurement harness
+.pw-profile/
+test-results/
+playwright-report/
+.playwright-mcp/
+
+# next.js
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env*.local
+
+# os
+.DS_Store
+Thumbs.db
+submission/
+
+# CDP measurement artefacts (regenerate with: npm run cdp && npm run measure)
+reference-teardown/
+.pw-profile/

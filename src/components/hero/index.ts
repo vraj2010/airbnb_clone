@@ -1,0 +1,1 @@
+export { HeroGallery } from './HeroGallery';

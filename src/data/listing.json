@@ -1,0 +1,1136 @@
+{
+  "_provenance": {
+    "verified": [
+      "title",
+      "propertyType",
+      "location",
+      "capacity",
+      "discount",
+      "freeCancellation",
+      "price.total",
+      "price.nights",
+      "price.guests",
+      "stay",
+      "photos[].id",
+      "photos[].group",
+      "photoCount",
+      "rating.overall",
+      "rating.reviewCount",
+      "rating.isGuestFavourite",
+      "rating.blurb",
+      "host.name",
+      "host.yearsHosting",
+      "host.responseRate",
+      "host.responseTime",
+      "host.reviewCount",
+      "host.rating",
+      "host.bornIn",
+      "host.school",
+      "host.coHosts",
+      "highlights",
+      "description",
+      "descriptionNotice",
+      "sleepingArrangements",
+      "amenities[0..9]",
+      "amenityCount",
+      "ratingBreakdown",
+      "reviews",
+      "reviewTags",
+      "neighbourhood",
+      "houseRules",
+      "nearbyStays[].title",
+      "nearbyStays[].price",
+      "nearbyStays[].rating"
+    ],
+    "placeholder": [
+      "photos[] are licensed Unsplash stock, NOT the reference listing photos - see public/photos/CREDITS.md",
+      "photos[].groupCaption",
+      "photoGroups",
+      "price.cleaningFee and price.serviceFee - the reference shows only the 5-night total",
+      "amenities[10..49] - the reference shows 10 of 50 before \"Show all\"",
+      "reviewTags beyond the 7 captured - more exist off-screen",
+      "rating.histogram - derived so the bar counts sum to 19 and average to 4.95",
+      "nearbyStays[].src - stock photography stands in for the real cards",
+      "host.isSuperhost - no Superhost badge was observed; the badge shown is Guest favourite"
+    ],
+    "note": "Content captured from the live listing on 2026-08-24. Everything under `placeholder` is either not exposed by the reference above the fold or is stand-in media. Design values live in REFERENCE-MEASURED.json, not here."
+  },
+  "id": "mirashya-ug10-candolim",
+  "title": "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
+  "propertyType": "Entire serviced apartment",
+  "location": {
+    "city": "Candolim",
+    "country": "India",
+    "region": "Goa"
+  },
+  "capacity": {
+    "guests": 3,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1
+  },
+  "discount": {
+    "percentOff": 10,
+    "label": "Get 10% off your next stay",
+    "termsLabel": "Terms apply",
+    "ctaLabel": "Claim"
+  },
+  "price": {
+    "currency": "INR",
+    "symbol": "₹",
+    "total": 28499,
+    "nights": 5,
+    "guests": 2,
+    "cleaningFee": 1500,
+    "serviceFee": 2999
+  },
+  "stay": {
+    "from": "2026-10-18",
+    "to": "2026-10-23"
+  },
+  "photoCount": 43,
+  "photos": [
+    {
+      "id": 1000,
+      "src": "/photos/ref/a9831aeb-f441-44f5-a38f-4cf54e3f0fcf.jpeg",
+      "alt": "Living room 1",
+      "group": "Living room 1",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan · TV",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1001,
+      "src": "/photos/ref/a45feaa2-b607-4092-83ac-5fd4b2894959.jpeg",
+      "alt": "Living room 1",
+      "group": "Living room 1",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan · TV",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1002,
+      "src": "/photos/ref/f1da1c3d-0d10-481e-9b63-c71f9073f30b.jpeg",
+      "alt": "Living room 1",
+      "group": "Living room 1",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan · TV",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1003,
+      "src": "/photos/ref/090d8b0b-b539-42c0-84f8-e1fb0cdf9a93.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1004,
+      "src": "/photos/ref/9be71047-fc52-438a-9270-75cb470f6752.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1005,
+      "src": "/photos/ref/f6de1663-4e9c-4414-b63b-29a154a92ee1.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1006,
+      "src": "/photos/ref/2367476f-11c4-4a14-a7c6-267be62c1d59.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1007,
+      "src": "/photos/ref/34529829-a971-44d3-ac2f-90ea3678a34d.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1008,
+      "src": "/photos/ref/153aa732-4935-48b8-a6fe-b469b6af5efc.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1009,
+      "src": "/photos/ref/3c6e6809-1bb1-47a6-8e24-aff593e1c28f.jpeg",
+      "alt": "Living room 2",
+      "group": "Living room 2",
+      "groupCaption": "Sofa · Air conditioning · Ceiling fan",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1010,
+      "src": "/photos/ref/56c44812-52c0-4481-90d8-101ec1f34c7a.jpeg",
+      "alt": "Full kitchen",
+      "group": "Full kitchen",
+      "groupCaption": "Refrigerator · Microwave · Cooking basics",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1011,
+      "src": "/photos/ref/ddc853d7-e658-405c-bedc-8f31106c447e.jpeg",
+      "alt": "Full kitchen",
+      "group": "Full kitchen",
+      "groupCaption": "Refrigerator · Microwave · Cooking basics",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1012,
+      "src": "/photos/ref/67c61c6f-6260-4809-9510-0360e58a345d.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1013,
+      "src": "/photos/ref/1c827136-4a85-4fe0-8e69-3fd8ea19bb17.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1014,
+      "src": "/photos/ref/0622ab42-b851-4d55-9d9f-df3143bc5909.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1015,
+      "src": "/photos/ref/a74e3c0b-3188-4442-9146-1cd4d6ea45df.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1016,
+      "src": "/photos/ref/48a8ffbc-fbf7-4f84-bc29-ee400da3f08b.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1017,
+      "src": "/photos/ref/3cf31697-f3f3-4c60-82c4-029acb119ae4.jpeg",
+      "alt": "Bedroom",
+      "group": "Bedroom",
+      "groupCaption": "1 king bed · Air conditioning · Wardrobe",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1018,
+      "src": "/photos/ref/97c78f8a-5090-4663-aebc-ba4e13b47092.jpeg",
+      "alt": "Full bathroom",
+      "group": "Full bathroom",
+      "groupCaption": "Bathtub · Hot water · Shampoo",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1019,
+      "src": "/photos/ref/9aa8e65f-94ac-4ba0-9a10-9ec91e536d22.jpeg",
+      "alt": "Gym",
+      "group": "Gym",
+      "groupCaption": "Exercise equipment · Air conditioning",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1020,
+      "src": "/photos/ref/246bd88d-4dd6-4117-a401-02a36ebfcf16.jpeg",
+      "alt": "Gym",
+      "group": "Gym",
+      "groupCaption": "Exercise equipment · Air conditioning",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1021,
+      "src": "/photos/ref/4fede77d-7a71-446f-89e3-263af937f3fa.jpeg",
+      "alt": "Gym",
+      "group": "Gym",
+      "groupCaption": "Exercise equipment · Air conditioning",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1022,
+      "src": "/photos/ref/79f59adb-5a5f-4d6c-8109-1f01f4ca0d03.jpeg",
+      "alt": "Gym",
+      "group": "Gym",
+      "groupCaption": "Exercise equipment · Air conditioning",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1023,
+      "src": "/photos/ref/f19d8c0a-1d88-42a4-9218-686d4f0db7e4.jpeg",
+      "alt": "Gym",
+      "group": "Gym",
+      "groupCaption": "Exercise equipment · Air conditioning",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1024,
+      "src": "/photos/ref/23ea6621-6f74-4baa-acea-2fd03e312b41.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1025,
+      "src": "/photos/ref/5adfdf3e-d497-4efc-ab8c-fc559dab311e.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1026,
+      "src": "/photos/ref/608748cd-6ee7-4a71-88a2-ba79d3ddba5a.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1027,
+      "src": "/photos/ref/5b856fde-a393-41bf-b373-c9d02e64221f.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1028,
+      "src": "/photos/ref/c904e1ab-a39d-4ef0-bdea-8c0bd16b9e3d.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1029,
+      "src": "/photos/ref/42befad7-fb29-473d-91db-b03e7a544d1d.jpeg",
+      "alt": "Exterior",
+      "group": "Exterior",
+      "groupCaption": "Balcony · Garden view",
+      "width": 1440,
+      "height": 808
+    },
+    {
+      "id": 1030,
+      "src": "/photos/ref/fc02f48f-a937-42c5-895d-f9cc3113d6ca.jpeg",
+      "alt": "Pool",
+      "group": "Pool",
+      "groupCaption": "Shared outdoor pool · Sun loungers",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1031,
+      "src": "/photos/ref/929545d3-e241-46c0-8a70-c24531ce7b54.jpeg",
+      "alt": "Pool",
+      "group": "Pool",
+      "groupCaption": "Shared outdoor pool · Sun loungers",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1032,
+      "src": "/photos/ref/8eb65a8b-e795-4870-b141-6f63b1be24ae.jpeg",
+      "alt": "Pool",
+      "group": "Pool",
+      "groupCaption": "Shared outdoor pool · Sun loungers",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1033,
+      "src": "/photos/ref/70325367-cbae-4993-b560-18cd3f6edd53.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1034,
+      "src": "/photos/ref/cc7a56bd-242c-498a-9aef-0cffac619e54.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1035,
+      "src": "/photos/ref/30ad93b2-293f-494d-b645-626303c6cb93.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1036,
+      "src": "/photos/ref/9642a60d-e9de-4e1a-89c2-9ebd230f4a74.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1037,
+      "src": "/photos/ref/b6599f26-d65c-4df0-baf2-ef18c82a86a3.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1038,
+      "src": "/photos/ref/dc01fd46-b119-48d3-a43b-f6c093e26eca.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1039,
+      "src": "/photos/ref/fe37b80e-da8a-4225-b27b-dfbb5d763c01.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1040,
+      "src": "/photos/ref/3c90338e-86b4-423f-aae1-279e0ccc3a18.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1041,
+      "src": "/photos/ref/862d936c-0f34-4e50-af87-b519e2781d19.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "id": 1042,
+      "src": "/photos/ref/79addceb-8c2d-419b-80ff-e29af426a94c.jpeg",
+      "alt": "Additional photos",
+      "group": "Additional photos",
+      "groupCaption": "",
+      "width": 1440,
+      "height": 1080
+    }
+  ],
+  "photoGroups": [
+    {
+      "name": "Living room 1",
+      "caption": "Sofa · Air conditioning · Ceiling fan · TV"
+    },
+    {
+      "name": "Living room 2",
+      "caption": "Sofa · Air conditioning · Ceiling fan"
+    },
+    {
+      "name": "Full kitchen",
+      "caption": "Refrigerator · Microwave · Cooking basics"
+    },
+    {
+      "name": "Bedroom",
+      "caption": "1 king bed · Air conditioning · Wardrobe"
+    },
+    {
+      "name": "Full bathroom",
+      "caption": "Bathtub · Hot water · Shampoo"
+    },
+    {
+      "name": "Gym",
+      "caption": "Exercise equipment · Air conditioning"
+    },
+    {
+      "name": "Exterior",
+      "caption": "Balcony · Garden view"
+    },
+    {
+      "name": "Pool",
+      "caption": "Shared outdoor pool · Sun loungers"
+    },
+    {
+      "name": "Additional photos",
+      "caption": ""
+    }
+  ],
+  "rating": {
+    "overall": 4.95,
+    "reviewCount": 19,
+    "isGuestFavourite": true,
+    "blurb": "This home is a guest favourite based on ratings, reviews and reliability",
+    "histogram": [
+      {
+        "stars": 5,
+        "count": 18
+      },
+      {
+        "stars": 4,
+        "count": 1
+      },
+      {
+        "stars": 3,
+        "count": 0
+      },
+      {
+        "stars": 2,
+        "count": 0
+      },
+      {
+        "stars": 1,
+        "count": 0
+      }
+    ],
+    "cardBlurb": "One of the most loved homes on Airbnb, according to guests"
+  },
+  "host": {
+    "name": "Mirashya Homes",
+    "isSuperhost": false,
+    "yearsHosting": 2,
+    "joinedYear": 2024,
+    "responseRate": 100,
+    "responseTime": "within an hour",
+    "reviewCount": 1463,
+    "rating": 4.68,
+    "bornIn": "Born in the 80s",
+    "school": "NICMAR GOA",
+    "coHosts": [
+      {
+        "name": "Sharath",
+        "avatar": "/photos/ref/co1.jpg"
+      },
+      {
+        "name": "Aman Dev Pahwa",
+        "avatar": "/photos/ref/co2.jpg"
+      },
+      {
+        "name": "Maria Karen Priyanka",
+        "avatar": "/photos/ref/co3.jpg"
+      },
+      {
+        "name": "Simran",
+        "avatar": "/photos/ref/rev5.jpeg"
+      },
+      {
+        "name": "Pallavi",
+        "avatar": "/photos/ref/rev1.jpeg"
+      },
+      {
+        "name": "Sanyukta",
+        "avatar": "/photos/ref/rev2.jpeg"
+      },
+      {
+        "name": "Shruti",
+        "tint": "pink"
+      },
+      {
+        "name": "Amisha",
+        "tint": "blue"
+      }
+    ],
+    "avatar": "/photos/ref/host.jpeg"
+  },
+  "highlights": [
+    {
+      "icon": "waves",
+      "title": "Outdoor entertainment",
+      "body": "The pool and alfresco dining are great for summer trips."
+    },
+    {
+      "icon": "snowflake",
+      "title": "Designed for staying cool",
+      "body": "Beat the heat with the A/C and ceiling fan."
+    },
+    {
+      "icon": "door-open",
+      "title": "Self check-in",
+      "body": "You can check in with the building staff."
+    }
+  ],
+  "description": [
+    "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨ Stay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors. Just minutes from Candolim Beach 🏖️, popular cafés, restaurants, and nightlife 🌴, it’s ideal for couples seeking romance, relaxation, and a touch of luxury in North Goa. 💗🌴"
+  ],
+  "amenities": [
+    {
+      "icon": "utensils",
+      "label": "Kitchen"
+    },
+    {
+      "icon": "wifi",
+      "label": "Wifi"
+    },
+    {
+      "icon": "laptop",
+      "label": "Dedicated workspace"
+    },
+    {
+      "icon": "car",
+      "label": "Free parking on premises"
+    },
+    {
+      "icon": "waves",
+      "label": "Pool"
+    },
+    {
+      "icon": "bath",
+      "label": "Hot tub"
+    },
+    {
+      "icon": "paw-print",
+      "label": "Pets allowed"
+    },
+    {
+      "icon": "cctv",
+      "label": "Exterior security cameras on property"
+    },
+    {
+      "icon": "alarm-smoke",
+      "label": "Carbon monoxide alarm",
+      "unavailable": true
+    },
+    {
+      "icon": "alarm-smoke",
+      "label": "Smoke alarm",
+      "unavailable": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "author": "Amit",
+      "tenure": "2 months on Airbnb",
+      "date": "1 week ago",
+      "rating": 5,
+      "body": "Very helpful and responsive team. Safe and peaceful stay. loved everything about the property.",
+      "truncated": false,
+      "avatar": "/photos/ref/rev1.jpeg"
+    },
+    {
+      "id": "r2",
+      "author": "Aheesh",
+      "tenure": "3 years on Airbnb",
+      "date": "2 weeks ago",
+      "rating": 5,
+      "body": "We had a wonderful stay. The apartment was clean, comfortable, and exactly as shown in the photos. The host was very responsive and helpful throughout our stay. We would definitely recommend this place and would love to stay here again.",
+      "truncated": false,
+      "avatar": "/photos/ref/rev2.jpeg"
+    },
+    {
+      "id": "r3",
+      "author": "Samiksha",
+      "tenure": "8 months on Airbnb",
+      "date": "May 2026",
+      "rating": 5,
+      "body": "the host nitish was really great help",
+      "truncated": false,
+      "avatar": "/photos/ref/rev3.jpeg"
+    },
+    {
+      "id": "r4",
+      "author": "Vedant",
+      "tenure": "4 years on Airbnb",
+      "date": "May 2026",
+      "rating": 5,
+      "body": "We had an amazing stay at this property in Goa! The entire home was spotless and exceptionally well-maintained, making us feel comfortable from the moment we arrived. The cleanliness standards were truly impressive, with every corner of the house looking fresh and pristine",
+      "truncated": true,
+      "avatar": "/photos/ref/rev4.jpeg"
+    },
+    {
+      "id": "r5",
+      "author": "Vaibhav S",
+      "tenure": "3 years on Airbnb",
+      "date": "May 2026",
+      "rating": 5,
+      "body": "Great great experience living out there , can’t expect more , will always look for it in the future and will recommend my friends too.",
+      "truncated": false,
+      "avatar": "/photos/ref/rev5.jpeg"
+    },
+    {
+      "id": "r6",
+      "author": "Mohd",
+      "tenure": "5 years on Airbnb",
+      "date": "May 2026",
+      "rating": 5,
+      "body": "Great place. Exactly as described in the listing.",
+      "truncated": false,
+      "avatar": "/photos/ref/rev1.jpeg"
+    }
+  ],
+  "ratingBreakdown": [
+    {
+      "label": "Cleanliness",
+      "score": 5
+    },
+    {
+      "label": "Accuracy",
+      "score": 5
+    },
+    {
+      "label": "Check-in",
+      "score": 5
+    },
+    {
+      "label": "Communication",
+      "score": 5
+    },
+    {
+      "label": "Location",
+      "score": 4.8
+    },
+    {
+      "label": "Value",
+      "score": 4.8
+    }
+  ],
+  "houseRules": {
+    "rules": [
+      "Check-in after 2:00 pm",
+      "Checkout before 11:00 am",
+      "3 guests maximum"
+    ],
+    "safety": [
+      "Carbon monoxide alarm not reported",
+      "Smoke alarm not reported",
+      "Exterior security cameras on property"
+    ],
+    "cancellation": [
+      "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+      "Review this host’s full policy for details."
+    ]
+  },
+  "freeCancellation": "Free cancellation before 17 October",
+  "descriptionNotice": "Some info has been automatically translated.",
+  "sleepingArrangements": [
+    {
+      "name": "Bedroom",
+      "icon": "bed-double",
+      "detail": "1 double bed"
+    },
+    {
+      "name": "Living room",
+      "icon": "sofa",
+      "detail": "1 sofa"
+    }
+  ],
+  "amenityCount": 50,
+  "reviewTags": [
+    {
+      "label": "Comfort",
+      "count": 6,
+      "icon": "/photos/ref/comfort.png"
+    },
+    {
+      "label": "Accuracy",
+      "count": 5,
+      "icon": "/photos/ref/accuracy.png"
+    },
+    {
+      "label": "Hot tub",
+      "count": 5,
+      "icon": "/photos/ref/hot-tub.png"
+    },
+    {
+      "label": "Condition",
+      "count": 4,
+      "icon": "/photos/ref/condition.png"
+    },
+    {
+      "label": "Hospitality",
+      "count": 8,
+      "icon": "/photos/ref/hospitality.png"
+    },
+    {
+      "label": "Cleanliness",
+      "count": 4,
+      "icon": "/photos/ref/cleanliness.png"
+    },
+    {
+      "label": "Amenities",
+      "count": 2,
+      "icon": "/photos/ref/amenities.png"
+    },
+    {
+      "label": "Décor",
+      "count": 2,
+      "icon": "/photos/ref/decor.png"
+    },
+    {
+      "label": "Indoor spaces",
+      "count": 2,
+      "icon": "/photos/ref/indoor-spaces.png"
+    },
+    {
+      "label": "Location",
+      "count": 2,
+      "icon": "/photos/ref/location.png"
+    }
+  ],
+  "neighbourhood": {
+    "label": "Candolim, Goa, India",
+    "note": "Exact location will be provided after booking.",
+    "body": "Located in the heart of Candolim, Amor de Goa offers a peaceful stay with easy access to beaches, cafés, and popular attractions.",
+    "coords": {
+      "lat": 15.518,
+      "lng": 73.7662,
+      "approximateRadiusMetres": 900,
+      "zoom": 14
+    }
+  },
+  "nearbyStays": [
+    {
+      "id": "nearby-1",
+      "title": "Beautiful Studio with a view to die for",
+      "price": 23600,
+      "rating": 4.91,
+      "src": "/photos/ref/s1.jpeg",
+      "alt": "Four-poster bed beside a balcony door looking onto a green hillside"
+    },
+    {
+      "id": "nearby-2",
+      "title": "NAQAB - 1bhk with private pool",
+      "price": 42218,
+      "rating": 4.95,
+      "src": "/photos/ref/s2.jpeg",
+      "alt": "Double-height living room with a white sofa and abstract wall panels"
+    },
+    {
+      "id": "nearby-3",
+      "title": "Greentique Luxury Flat with plunge pool, Calangute",
+      "price": 44506,
+      "rating": 4.94,
+      "src": "/photos/ref/s3.jpeg",
+      "alt": "Living room with a teal sofa, framed prints and a patterned rug"
+    },
+    {
+      "id": "nearby-4",
+      "title": "The Tropical Studio | 5 mins to Beach",
+      "price": 22824,
+      "rating": 4.96,
+      "src": "/photos/ref/s4.jpeg",
+      "alt": "Studio with a teal accent wall, a bed and a grey sofa"
+    },
+    {
+      "id": "nearby-5",
+      "title": "Luxury Casa Bella 1BHK with plunge pool, Calangute",
+      "price": 39942,
+      "rating": 4.95,
+      "src": "/photos/ref/s5.jpeg",
+      "alt": "Living room with a grey sectional, a blue armchair and a balcony"
+    },
+    {
+      "id": "nearby-6",
+      "title": "Elysian Retreat | 1BHK with private jacuzzi",
+      "price": 37150,
+      "rating": 4.92,
+      "src": "/photos/ref/s6.jpeg",
+      "alt": "Sunken bath in an arched alcove lit by a window onto greenery"
+    }
+  ],
+  "amenityGroups": [
+    {
+      "name": "Bathroom",
+      "items": [
+        {
+          "label": "Hairdryer",
+          "icon": "hairdryer"
+        },
+        {
+          "label": "Cleaning products",
+          "icon": "spray"
+        },
+        {
+          "label": "Shampoo",
+          "icon": "shampoo"
+        },
+        {
+          "label": "Hot water",
+          "icon": "hot-water"
+        },
+        {
+          "label": "Shower gel",
+          "icon": "shower-gel"
+        }
+      ]
+    },
+    {
+      "name": "Bedroom and laundry",
+      "items": [
+        {
+          "label": "Washing machine",
+          "icon": "washing-machine"
+        },
+        {
+          "label": "Hangers",
+          "icon": "hangers"
+        },
+        {
+          "label": "Bed linen",
+          "icon": "bed-linen"
+        },
+        {
+          "label": "Room-darkening blinds",
+          "icon": "blinds"
+        },
+        {
+          "label": "Iron",
+          "icon": "iron"
+        },
+        {
+          "label": "Clothes storage",
+          "icon": "clothes-storage"
+        },
+        {
+          "label": "Cot",
+          "icon": "cot"
+        }
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "items": [
+        {
+          "label": "TV",
+          "icon": "tv"
+        }
+      ]
+    },
+    {
+      "name": "Family",
+      "items": [
+        {
+          "label": "Cot",
+          "icon": "cot"
+        }
+      ]
+    },
+    {
+      "name": "Heating and cooling",
+      "items": [
+        {
+          "label": "Air conditioning",
+          "icon": "air-conditioning"
+        },
+        {
+          "label": "Ceiling fan",
+          "icon": "ceiling-fan"
+        }
+      ]
+    },
+    {
+      "name": "Home safety",
+      "items": [
+        {
+          "label": "Exterior security cameras on property",
+          "icon": "cctv"
+        },
+        {
+          "label": "Carbon monoxide alarm",
+          "icon": "co-alarm"
+        },
+        {
+          "label": "Smoke alarm",
+          "icon": "alarm-smoke"
+        }
+      ]
+    },
+    {
+      "name": "Internet and office",
+      "items": [
+        {
+          "label": "Wifi",
+          "icon": "wifi"
+        },
+        {
+          "label": "Dedicated workspace",
+          "icon": "laptop"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen and dining",
+      "items": [
+        {
+          "label": "Kitchen",
+          "icon": "utensils"
+        },
+        {
+          "label": "Fridge",
+          "icon": "fridge"
+        },
+        {
+          "label": "Freezer",
+          "icon": "freezer"
+        },
+        {
+          "label": "Microwave",
+          "icon": "microwave"
+        },
+        {
+          "label": "Cooking basics",
+          "icon": "cooking-basics"
+        },
+        {
+          "label": "Crockery and cutlery",
+          "icon": "crockery"
+        },
+        {
+          "label": "Kettle",
+          "icon": "kettle"
+        },
+        {
+          "label": "Coffee",
+          "icon": "coffee"
+        },
+        {
+          "label": "Wine glasses",
+          "icon": "wine"
+        },
+        {
+          "label": "Toaster",
+          "icon": "toaster"
+        },
+        {
+          "label": "Blender",
+          "icon": "blender"
+        },
+        {
+          "label": "Cooker",
+          "icon": "cooker"
+        }
+      ]
+    },
+    {
+      "name": "Location features",
+      "items": [
+        {
+          "label": "Private entrance",
+          "icon": "private-entrance"
+        }
+      ]
+    },
+    {
+      "name": "Outdoor",
+      "items": [
+        {
+          "label": "Patio or balcony",
+          "icon": "patio"
+        },
+        {
+          "label": "Outdoor dining area",
+          "icon": "outdoor-dining"
+        }
+      ]
+    },
+    {
+      "name": "Parking and facilities",
+      "items": [
+        {
+          "label": "Free parking on premises",
+          "icon": "car"
+        },
+        {
+          "label": "Pool",
+          "icon": "waves"
+        },
+        {
+          "label": "Hot tub",
+          "icon": "bath"
+        },
+        {
+          "label": "Gym",
+          "icon": "dumbbell"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "items": [
+        {
+          "label": "Pets allowed",
+          "icon": "paw-print"
+        },
+        {
+          "label": "Cleaning available during stay",
+          "icon": "spray"
+        },
+        {
+          "label": "Long-term stays allowed",
+          "icon": "calendar-check"
+        },
+        {
+          "label": "Self check-in",
+          "icon": "door"
+        }
+      ]
+    }
+  ],
+  "heroPhotoIds": [
+    1006,
+    1003,
+    1004,
+    1012,
+    1028
+  ]
+}

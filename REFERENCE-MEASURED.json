@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "source": "https://airbnb-clone-umber-two.vercel.app",
+    "status": "MEASURED — layout and typography read from the live reference over CDP",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "measuredAt": "2026-08-25 (CDP, viewport 1901x900 @ DPR 1)",
+    "note": [
+      "This file is the SINGLE SOURCE OF TRUTH for every design value in the app.",
+      "src/app/theme.css is GENERATED from it by scripts/generate-theme.mjs — never hand-edit theme.css.",
+      "Each entry carries a `status`: 'measured' (read off the live reference) or",
+      "'estimated' (not yet verified — a placeholder to be overwritten).",
+      "When the measurement pass lands: overwrite `value`, flip `status` to 'measured',",
+      "run `npm run theme`, and the whole app updates. No component changes required.",
+      "Every 'estimated' entry is listed in docs/ESTIMATES.md as the punch list."
+    ],
+    "statusCounts": "see docs/ESTIMATES.md"
+  },
+  "layout": {
+    "contentWidth": {
+      "value": 1120,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Body container, centred. Fixed max-width: still 1120 at a 1886px client width, so it does not grow."
+    },
+    "contentMaxWidth": {
+      "value": 1120,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Same as contentWidth - the container is capped, not fluid."
+    },
+    "contentSideGutter": {
+      "value": 24,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Gutter only matters below 1120+2*24; the cap binds on desktop."
+    },
+    "headerHeight": {
+      "value": 89,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Live header box height."
+    },
+    "searchPillHeight": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Pill 404x48, border #DDDDDD, padding 0 8px."
+    },
+    "searchButtonSize": {
+      "value": 32,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Pink search circle 32x32, background #FF385C."
+    },
+    "headerIconButtonSize": {
+      "value": 40,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Globe and menu 40x40 on #F2F2F2 at x=1718 and x=1766."
+    },
+    "logoHeight": {
+      "value": 32,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Logo lockup 103x32 at x=80."
+    },
+    "heroHeight": {
+      "value": 494,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Large tile 560x494 at x=383."
+    },
+    "heroToBodyGap": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured"
+    },
+    "leftColumnWidth": {
+      "value": 652,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Left column; 652 + 96 + 372 = 1120."
+    },
+    "columnGutter": {
+      "value": 96,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Left column ends x=1035, card starts x=1131."
+    },
+    "reservationCardWidth": {
+      "value": 372,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Card box 372x368 at x=1131."
+    },
+    "heroTileLarge": {
+      "value": {
+        "w": 560,
+        "h": 494
+      },
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120)."
+    },
+    "heroTileSmall": {
+      "value": {
+        "w": 272,
+        "h": 243
+      },
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120)."
+    },
+    "heroGap": {
+      "value": 8,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "383+560=943 -> next tile at 951; rows 243+8."
+    },
+    "stickyTopOffset": {
+      "value": 100,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "The right column's sticky wrapper is position:sticky; top:100px. With the 70px promo card and a 24px gap above it, the booking card pins with its top at 194px."
+    },
+    "sectionGap": {
+      "value": 48,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.2 (48-64px)"
+    },
+    "mapHeight": {
+      "value": 480,
+      "unit": "px",
+      "status": "measured",
+      "note": "AT 1120 content width. Measured 600px at a 1400 container (y288..y887), and 600/1400 == 480/1120, so the panel scales with the container -- generated CSS gives it aspect-ratio 1120/480 rather than a fixed height."
+    },
+    "documentScrollHeight": {
+      "value": 6256,
+      "unit": "px",
+      "status": "measured",
+      "note": "informational only — not a token"
+    },
+    "reserveButtonHeight": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Card Reserve button 322x48."
+    },
+    "cardPadding": {
+      "value": 22,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Booking card padding measured 22px (was 24)."
+    },
+    "mapGridCell": {
+      "value": 90,
+      "unit": "px",
+      "status": "measured",
+      "note": "Vertical grid lines 112.5px apart at a 1400 container => 8.036% of the container.",
+      "source": "pixel-sampled from /output screenshot 092833"
+    },
+    "headerSideGutter": {
+      "value": 80,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Header is full-bleed with 80px padding: logo starts x=80, last icon button ends x=1806 in an 1886px client."
+    },
+    "secondaryNavHeight": {
+      "value": 67,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Pinned sub-nav measured 67px tall over CDP while the page was scrolled; the header above it is position:relative and scrolls away."
+    },
+    "hostCardWidth": {
+      "value": 340,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Host card box measured 340x261 at x=391."
+    },
+    "hostAvatarSize": {
+      "value": 88,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Avatar image 88x88, centred in the card's left cell."
+    },
+    "hostColumnGap": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Card ends x=731, the co-hosts column starts x=779."
+    },
+    "promoCardGap": {
+      "value": 24,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Promo card ends y=785, booking card starts y=809."
+    },
+    "reportGap": {
+      "value": 26,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Booking card ends y=1177, 'Report this listing' starts y=1203."
+    },
+    "promoCardHeight": {
+      "value": 70,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Promo card box 372x70."
+    },
+    "amenitiesDialogWidth": {
+      "value": 780,
+      "unit": "px",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "note": "Amenities dialog panel measured 780x709 with 48px side padding (title/content column 669px)."
+    },
+    "tourContentWidth": {
+      "value": 976,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour, opened via the 'Show all photos' button (the ?modal= deep link mounts the dialog but never paints it). Viewport 1886x900 @ DPR 1.",
+      "note": "Two 458px columns with a 60px gutter. The LEFT column holds the room name and caption, the RIGHT column its photos — the name is beside the photos, not above them."
+    },
+    "tourColumnGap": {
+      "value": 60,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour, opened via the 'Show all photos' button (the ?modal= deep link mounts the dialog but never paints it). Viewport 1886x900 @ DPR 1.",
+      "note": "Room-name column ends x=898, photo column starts x=958."
+    },
+    "tourChipWidth": {
+      "value": 112,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour overlay (?modal=PHOTO_TOUR_SCROLLABLE), viewport 1886x900 @ DPR 1, 2026-08-25.",
+      "note": "Chip thumbnail width. Eight chips per row across the 976px content width with 12px gaps ((976 - 7*12)/8 = 111.5), so the ninth wraps to a second row — the strip wraps, it does not scroll."
+    },
+    "tourChipImageHeight": {
+      "value": 105,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour overlay (?modal=PHOTO_TOUR_SCROLLABLE), viewport 1886x900 @ DPR 1, 2026-08-25.",
+      "note": "Thumbnail height inside a jump-nav chip."
+    },
+    "tourChipGap": {
+      "value": 12,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour overlay (?modal=PHOTO_TOUR_SCROLLABLE), viewport 1886x900 @ DPR 1, 2026-08-25.",
+      "note": "Chips sit 124px apart at 112 wide => 12px gap."
+    },
+    "tourIconButtonSize": {
+      "value": 40,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour overlay (?modal=PHOTO_TOUR_SCROLLABLE), viewport 1886x900 @ DPR 1, 2026-08-25.",
+      "note": "Back / Share / Save controls in the tour top bar are 40x40."
+    },
+    "tourPhotoGap": {
+      "value": 12,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the reference's Photo Tour, opened via the 'Show all photos' button (the ?modal= deep link mounts the dialog but never paints it). Viewport 1886x900 @ DPR 1.",
+      "note": "Within the photo column: the lead photo is 458x305, the rest are 223x149 two-up (223 + 12 + 223 = 458)."
+    },
+    "searchPillPadding": {
+      "value": 8,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference header, viewport 1886x900 @ DPR 1, 2026-08-25 (CSS.getComputedStyleForNode — the page masks getComputedStyle from page script).",
+      "note": "Pill inner padding is 8px on both sides (404x48 outer). The segments themselves carry 16px."
+    },
+    "searchSegmentPadding": {
+      "value": 16,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference header, viewport 1886x900 @ DPR 1, 2026-08-25 (CSS.getComputedStyleForNode — the page masks getComputedStyle from page script).",
+      "note": "Each segment (Anywhere 149x48, Anytime 88x48, Add guests 106x48) has 0 16px padding."
+    },
+    "searchLeadIconSize": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference header, viewport 1886x900 @ DPR 1, 2026-08-25 (CSS.getComputedStyleForNode — the page masks getComputedStyle from page script).",
+      "note": "The house glyph is a 48x48 image inside the Anywhere segment — full pill height — not a small inline emoji."
+    },
+    "searchDividerHeight": {
+      "value": 24,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference header, viewport 1886x900 @ DPR 1, 2026-08-25 (CSS.getComputedStyleForNode — the page masks getComputedStyle from page script).",
+      "note": "1x24 dividers in #DDDDDD between the segments."
+    },
+    "laurelWidth": {
+      "value": 72,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference, 2026-08-25: rendered getBoundingClientRect of the image element itself, captured by scripts/measure/08-image-manifest.mjs at viewport 1886x900 @ DPR 1.",
+      "note": "Laurel branch rendered 72x110 from a 240x365 source; the two branches are separate assets, not one mirrored."
+    },
+    "laurelHeight": {
+      "value": 110,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference, 2026-08-25: rendered getBoundingClientRect of the image element itself, captured by scripts/measure/08-image-manifest.mjs at viewport 1886x900 @ DPR 1.",
+      "note": "Laurel branch rendered 72x110. Taller than the rating number it frames, so it sets the row height."
+    },
+    "discountBadgeSize": {
+      "value": 32,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference, 2026-08-25: rendered getBoundingClientRect of the image element itself, captured by scripts/measure/08-image-manifest.mjs at viewport 1886x900 @ DPR 1.",
+      "note": "Promo-card badge 32x32, an SVG in the reference (a Lottie still), replacing the earlier lucide Tag glyph."
+    },
+    "nearbyCardGap": {
+      "value": 20,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference, 2026-08-25: rendered getBoundingClientRect of the image element itself, captured by scripts/measure/08-image-manifest.mjs at viewport 1886x900 @ DPR 1.",
+      "note": "Nearby-stay cards step 228px apart at 208px wide, so the gap is 20px. Five cards plus four gaps = 1120, exactly the content width."
+    },
+    "nearbyCardWidth": {
+      "value": 208,
+      "unit": "px",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference, 2026-08-25: rendered getBoundingClientRect of the card thumbnail, captured by scripts/measure/08-image-manifest.mjs at viewport 1886x900 @ DPR 1.",
+      "note": "Square 208x208 thumbnail. Cards step 228px apart, so five fit the 1120px content width exactly and the sixth overflows into the carousel track."
+    }
+  },
+  "font": {
+    "sans": {
+      "value": "Circular, 'Airbnb Cereal VF', var(--font-figtree), -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif",
+      "status": "measured",
+      "note": "Figtree is LOADED as a webfont via next/font/google in src/app/layout.tsx and exposed as --font-figtree. Before this, the stack only NAMED Circular / Airbnb Cereal — neither of which is installed anywhere — so every browser fell through to its generic sans (Arial on Windows), which is a neo-grotesque and could never match a geometric face at any size. Circular and Cereal stay ahead of it for anyone who genuinely licenses them; neither is redistributed here."
+    }
+  },
+  "color": {
+    "ink": {
+      "value": "#222222",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "primary text"
+    },
+    "body": {
+      "value": "#3F3F3F",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "long-form copy"
+    },
+    "muted": {
+      "value": "#717171",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "secondary text"
+    },
+    "canvas": {
+      "value": "#FFFFFF",
+      "status": "estimated",
+      "confidence": "high",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "page background"
+    },
+    "surface": {
+      "value": "#F7F7F7",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "hover surfaces, disabled fields"
+    },
+    "border": {
+      "value": "#DDDDDD",
+      "status": "estimated",
+      "confidence": "high",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "card borders"
+    },
+    "border-soft": {
+      "value": "#EBEBEB",
+      "status": "estimated",
+      "confidence": "high",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "section dividers (CSS borders — reference has zero <hr>)"
+    },
+    "primary": {
+      "value": "#FF385C",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "brand - search circle, active accents"
+    },
+    "primary-active": {
+      "value": "#E00B41",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "pressed state"
+    },
+    "success": {
+      "value": "#007A04",
+      "status": "estimated",
+      "confidence": "low",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "discount banner — hue explicitly unverified. Darkened from the #008A05 guess, which measured 4.22:1 on the surface colour and failed WCAG AA. Nothing was measured here, so an accessible green beats an inaccessible guess; re-measure like any other estimate."
+    },
+    "error": {
+      "value": "#C13515",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.5",
+      "role": "form validation"
+    },
+    "lightbox-backdrop": {
+      "value": "#FFFFFF",
+      "status": "measured",
+      "role": "lightbox backdrop is WHITE — research doc guessed near-black and was wrong"
+    },
+    "overlay-scrim": {
+      "value": "rgba(0,0,0,0.60)",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "photo tour scrim"
+    },
+    "map-water": {
+      "value": "#ADD1E1",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092833, 2026-08-25",
+      "role": "\"Where you'll be\" stylised map panel, water region"
+    },
+    "map-land": {
+      "value": "#E5EBDF",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092833, 2026-08-25",
+      "role": "map panel, land region"
+    },
+    "header-control": {
+      "value": "#F2F2F2",
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "globe + menu discs"
+    },
+    "primary-gradient-from": {
+      "value": "#E31C5F",
+      "status": "measured",
+      "source": "pixel-sampled from user-provided /output screenshot 092556, Reserve button, x≈1423-1428 y=655",
+      "role": "Reserve CTA gradient, left stop — the reference button is not a flat fill"
+    },
+    "primary-gradient-to": {
+      "value": "#D70466",
+      "status": "measured",
+      "source": "pixel-sampled from user-provided /output screenshot 092556, Reserve button, x≈1608-1613 y=655",
+      "role": "Reserve CTA gradient, right stop"
+    },
+    "map-park": {
+      "value": "#CFE3C8",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092833, 2026-08-25",
+      "role": "map panel, park/greenspace discs"
+    },
+    "map-grid": {
+      "value": "#DFE5DA",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092833, 2026-08-25",
+      "role": "map panel hairline grid"
+    },
+    "avatar-pink": {
+      "value": "#FDE7EF",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092850, Co-Hosts initial avatars, 2026-08-25",
+      "role": "co-host initial avatar, pink disc fill (Shruti)"
+    },
+    "avatar-pink-ink": {
+      "value": "#D4356E",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092850, Co-Hosts initial avatars, 2026-08-25",
+      "role": "co-host initial avatar, pink disc letter"
+    },
+    "avatar-blue": {
+      "value": "#E7F0FD",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092850, Co-Hosts initial avatars, 2026-08-25",
+      "role": "co-host initial avatar, blue disc fill (Amisha)"
+    },
+    "avatar-blue-ink": {
+      "value": "#3A6ECC",
+      "status": "measured",
+      "source": "pixel-sampled from /output screenshot 092850, Co-Hosts initial avatars, 2026-08-25",
+      "role": "co-host initial avatar, blue disc letter"
+    }
+  },
+  "type": {
+    "display-lg": {
+      "value": {
+        "size": 26,
+        "weight": 500,
+        "lineHeight": "30px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "listing H1"
+    },
+    "display-md": {
+      "value": {
+        "size": 22,
+        "weight": 500,
+        "lineHeight": "26px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "section headings, main property H2, booking-card price"
+    },
+    "display-sm": {
+      "value": {
+        "size": 20,
+        "weight": 700,
+        "lineHeight": "28.6px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "guest-favourite score and review count"
+    },
+    "title-md": {
+      "value": {
+        "size": 16,
+        "weight": 500,
+        "lineHeight": "22.88px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "host name, Show all amenities"
+    },
+    "body-md": {
+      "value": {
+        "size": 16,
+        "weight": 400,
+        "lineHeight": "22.88px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "listing metadata, amenity labels"
+    },
+    "body-sm": {
+      "value": {
+        "size": 14,
+        "weight": 400,
+        "lineHeight": "20px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "default body copy, promo text, input values"
+    },
+    "nav-label": {
+      "value": {
+        "size": 14,
+        "weight": 500,
+        "lineHeight": "20px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "nav tabs, pill labels, Share/Save, Reserve, feature titles"
+    },
+    "price-sm": {
+      "value": {
+        "size": 15,
+        "weight": 500,
+        "lineHeight": "18px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "sub-nav price"
+    },
+    "note": {
+      "value": {
+        "size": 13,
+        "weight": 400,
+        "lineHeight": "18.59px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "free-cancellation notice, sub-nav rating"
+    },
+    "micro": {
+      "value": {
+        "size": 12,
+        "weight": 400,
+        "lineHeight": "17.16px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "host-card stat labels"
+    },
+    "caption": {
+      "value": {
+        "size": 12,
+        "weight": 500,
+        "lineHeight": "16px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "Show all photos"
+    },
+    "badge": {
+      "value": {
+        "size": 10,
+        "weight": 700,
+        "lineHeight": "14.3px",
+        "letterSpacing": "0.4px"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "uppercase form labels"
+    },
+    "card-body": {
+      "value": {
+        "size": 14,
+        "weight": 400,
+        "lineHeight": "18.2px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "guest-favourite blurb"
+    },
+    "logo": {
+      "value": {
+        "size": 26,
+        "weight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "wordmark fallback (image asset is used)"
+    },
+    "search-icon": {
+      "value": {
+        "size": 34,
+        "weight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "normal"
+      },
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "The reference uses a 48x48 raster house illustration; this build substitutes the emoji, sized to read at the same scale inside a 48px box.",
+      "role": "house glyph at the head of the search pill"
+    },
+    "rating": {
+      "value": {
+        "size": 100,
+        "weight": 500,
+        "lineHeight": "143px",
+        "letterSpacing": "-3px"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "the large guest-favourite score in the Reviews section"
+    },
+    "label-sm": {
+      "value": {
+        "size": 13,
+        "weight": 500,
+        "lineHeight": "18px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "guest-favourite card 'Reviews' label"
+    },
+    "heading-sm": {
+      "value": {
+        "size": 18,
+        "weight": 500,
+        "lineHeight": "26px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "Co-Hosts / Host details sub-headings"
+    },
+    "stat-value": {
+      "value": {
+        "size": 20,
+        "weight": 500,
+        "lineHeight": "29px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "host-card stat values (1,463 / 4.68 / 2)"
+    },
+    "body-lg": {
+      "value": {
+        "size": 15,
+        "weight": 400,
+        "lineHeight": "24px",
+        "letterSpacing": "normal"
+      },
+      "status": "measured",
+      "source": "MEASURED OVER CDP against the live reference on 2026-08-25 (Chrome --remote-debugging-port=9222, viewport pinned 1901x900 @ DPR 1, values read via CSS.getComputedStyleForNode because the page masks getComputedStyle from page script). This is ground truth and supersedes every earlier screenshot-derived value: the /output captures were taken at ~124% browser zoom, which inflated everything read from them by that factor (header measured 110 there vs 89 live; content 1400 vs 1120).",
+      "role": "host details copy, Born in / school lines"
+    }
+  },
+  "radius": {
+    "sm": {
+      "value": 8,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "medium",
+      "role": "buttons, inputs"
+    },
+    "card": {
+      "value": 14,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "medium",
+      "role": "reservation card"
+    },
+    "image": {
+      "value": 12,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "photo tour / lightbox images"
+    },
+    "hero": {
+      "value": 18,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "hero mosaic OUTER corners only; inner edges square"
+    },
+    "pill": {
+      "value": 999,
+      "unit": "px",
+      "status": "estimated",
+      "confidence": "high",
+      "role": "badges, circular lightbox arrows"
+    }
+  },
+  "shadow": {
+    "system": {
+      "value": "rgba(0,0,0,0.02) 0 0 0 1px, rgba(0,0,0,0.04) 0 2px 6px 0, rgba(0,0,0,0.10) 0 4px 8px 0",
+      "status": "estimated",
+      "confidence": "medium",
+      "source": "SPEC-RESEARCH 1.6",
+      "role": "the ONE system shadow — reservation card, floating buttons, badges"
+    },
+    "search": {
+      "value": "rgba(0,0,0,0.08) 0 1px 4px 0",
+      "status": "measured",
+      "source": "Measured over CDP on the live reference header, viewport 1886x900 @ DPR 1, 2026-08-25 (CSS.getComputedStyleForNode — the page masks getComputedStyle from page script).",
+      "role": "search pill resting shadow"
+    },
+    "search-hover": {
+      "value": "rgba(0,0,0,0.18) 0 2px 4px 0",
+      "status": "estimated",
+      "confidence": "low",
+      "source": "Hover state not observable in a static measurement; kept as the owner's spec value.",
+      "role": "search pill hover shadow"
+    }
+  },
+  "motion": {
+    "duration-fast": {
+      "value": 150,
+      "unit": "ms",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "hover transitions"
+    },
+    "duration-base": {
+      "value": 200,
+      "unit": "ms",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "button/state transitions"
+    },
+    "duration-modal": {
+      "value": 250,
+      "unit": "ms",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "overlay enter/exit"
+    },
+    "ease-standard": {
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "default easing"
+    },
+    "ease-out": {
+      "value": "cubic-bezier(0, 0, 0.2, 1)",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "enter transitions"
+    },
+    "overlay-enter-scale": {
+      "value": "0.99",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "scale the overlay content grows from on open"
+    },
+    "header-lift-range": {
+      "value": "4rem",
+      "status": "estimated",
+      "confidence": "low",
+      "role": "scroll distance over which the sticky header gains its shadow"
+    }
+  },
+  "zIndex": {
+    "lightbox": {
+      "value": 60,
+      "status": "estimated",
+      "confidence": "high",
+      "role": "lightbox layers above the photo tour"
+    }
+  },
+  "behaviour": {
+    "photoTourModalParam": {
+      "value": "?modal=PHOTO_TOUR_SCROLLABLE",
+      "status": "measured"
+    },
+    "lightboxItemParam": {
+      "value": "&modalItem=1000",
+      "status": "measured",
+      "note": "increments 1000 -> 1001 with arrow keys"
+    },
+    "photoTourAriaLabel": {
+      "value": "Photo tour",
+      "status": "measured"
+    },
+    "photoTourRoomGroups": {
+      "value": [
+        "Living room 1",
+        "Living room 2",
+        "Full kitchen",
+        "Bedroom",
+        "Full bathroom",
+        "Gym",
+        "Exterior",
+        "Pool",
+        "Additional photos"
+      ],
+      "status": "measured"
+    },
+    "photoTourThumbSize": {
+      "value": 48,
+      "unit": "px",
+      "status": "measured"
+    },
+    "lightboxPhotoCount": {
+      "value": 43,
+      "status": "measured",
+      "note": "counter reads '1 of 43'"
+    },
+    "scrollbarShiftBug": {
+      "value": 8,
+      "unit": "px",
+      "status": "measured",
+      "note": "reference shifts content 8px on modal open (uncompensated scrollbar). Deliberately FIXED in the clone — see README."
+    }
+  }
+}

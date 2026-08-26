@@ -1,0 +1,139 @@
+---
+title: Vacation-rental marketplace — production architecture
+---
+flowchart TB
+
+  %% ============================ CLIENTS ============================
+  subgraph CLIENTS["Clients"]
+    direction LR
+    WEB["Web<br/>Next.js App Router"]
+    IOS["iOS"]
+    AND["Android"]
+  end
+
+  %% ============================== EDGE ==============================
+  subgraph EDGE["Edge"]
+    direction LR
+    CDN["CDN<br/>static + images<br/>cache at PoP"]
+    IMG["Image pipeline<br/>on-the-fly resize<br/>WebP / AVIF"]
+    WAF["WAF + DDoS<br/>bot mitigation"]
+    GW["API Gateway<br/>authn, rate limit,<br/>request routing"]
+  end
+
+  %% ============================ RENDERING ============================
+  subgraph RENDER["Rendering"]
+    direction LR
+    RSC["React Server Components<br/>listing detail"]
+    ISR["ISR / edge cache<br/>semi-static pages"]
+  end
+
+  %% ======================= READ PATH (search) =======================
+  subgraph READ["READ PATH — optimised for query latency"]
+    direction TB
+    SEARCH["Search service"]
+    ES[("OpenSearch / Elasticsearch<br/>geo + availability index<br/>eventually consistent")]
+    LISTSVC["Listing service"]
+    REDIS[("Redis<br/>hot listings, sessions,<br/>price quotes")]
+    REPLICA[("Postgres read replicas<br/>listing catalogue")]
+    SEARCH --> ES
+    LISTSVC --> REDIS
+    LISTSVC --> REPLICA
+  end
+
+  %% ====================== WRITE PATH (booking) ======================
+  subgraph WRITE["WRITE PATH — optimised for correctness"]
+    direction TB
+    BOOK["Booking service<br/>idempotency key per request"]
+    PGP[("Postgres primary — ACID<br/>EXCLUDE constraint on<br/>daterange per listing<br/>= no double-booking")]
+    SAGA["Booking saga<br/>hold → authorise → confirm<br/>compensating rollback"]
+    PRICE["Pricing service<br/>dynamic rates, fees, taxes"]
+    BOOK --> PGP
+    BOOK --> SAGA
+    SAGA --> PRICE
+  end
+
+  %% =========================== OTHER SOA ===========================
+  subgraph SVC["Supporting services"]
+    direction LR
+    REVIEW["Reviews"]
+    MSG["Messaging"]
+    PAY["Payments"]
+    USER["Identity / KYC"]
+  end
+
+  %% ============================ PAYMENTS ============================
+  subgraph MONEY["Payments — PCI scope isolated"]
+    direction LR
+    PSP["Processor<br/>Stripe Connect"]
+    ESCROW["Escrow ledger<br/>hold until check-in +24h"]
+    PAYOUT["Split payout<br/>host − platform fee"]
+    PSP --> ESCROW --> PAYOUT
+  end
+
+  %% ============================== ASYNC ==============================
+  subgraph ASYNC["Async backbone"]
+    direction LR
+    KAFKA{{"Kafka / CDC<br/>booking + listing change events"}}
+    INDEXER["Indexer<br/>projects writes into<br/>the search index"]
+    WORKERS["Workers<br/>email, payouts,<br/>fraud scoring, ETL"]
+  end
+
+  %% ============================= STORAGE =============================
+  subgraph STORE["Storage"]
+    direction LR
+    S3[("Object storage<br/>original photos")]
+    DWH[("Warehouse<br/>analytics, ML features")]
+  end
+
+  %% =========================== CROSS-CUTTING ===========================
+  subgraph OPS["Cross-cutting"]
+    direction LR
+    OBS["Observability<br/>traces, metrics, logs, SLOs"]
+    SEC["Secrets, IAM, audit"]
+    MR["Multi-region<br/>active-passive failover"]
+  end
+
+  %% ============================== FLOWS ==============================
+  CLIENTS --> WAF --> CDN
+  CDN --> IMG
+  IMG --> S3
+  CDN --> GW
+  GW --> RENDER
+  RENDER --> SEARCH
+  RENDER --> LISTSVC
+  RENDER --> BOOK
+
+  GW --> REVIEW
+  GW --> MSG
+  GW --> USER
+  BOOK --> PAY
+  PAY --> PSP
+
+  %% the decoupling that matters
+  PGP -- "change data capture" --> KAFKA
+  REPLICA -. "streaming replication" .-> PGP
+  KAFKA --> INDEXER
+  INDEXER -- "async reindex<br/>(eventual consistency:<br/>a new listing is searchable<br/>in seconds, not instantly)" --> ES
+  KAFKA --> WORKERS
+  KAFKA --> DWH
+  WORKERS --> PAYOUT
+
+  REVIEW --> REPLICA
+  MSG --> REPLICA
+
+  OPS -.-> READ
+  OPS -.-> WRITE
+  OPS -.-> ASYNC
+
+  %% ============================== STYLE ==============================
+  classDef read fill:#E8F1FB,stroke:#2C6FB5,stroke-width:1px,color:#10243B
+  classDef write fill:#FDECEF,stroke:#C2325A,stroke-width:1px,color:#3B1018
+  classDef async fill:#F3EEFB,stroke:#6B4FA8,stroke-width:1px,color:#241A38
+  classDef edge fill:#EAF6EF,stroke:#2E8B57,stroke-width:1px,color:#12301F
+  classDef store fill:#F4F4F4,stroke:#767676,stroke-width:1px,color:#222222
+
+  class SEARCH,ES,LISTSVC,REDIS,REPLICA read
+  class BOOK,PGP,SAGA,PRICE write
+  class KAFKA,INDEXER,WORKERS async
+  class CDN,IMG,WAF,GW edge
+  class S3,DWH store
